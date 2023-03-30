@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-widht, iniciale-scale=1.0" />
+        <title>Лабораторная 3.1</title>
+      
+    </head>
+    <body>
+        <script>
+         "use strict";
+         function WeekDay(){
+            let days = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
+            var size = ["70", "60", "50", "40", "30", "20", "10"];
+            var color = ["black", "grey", "blue", "lightblue", "purple", "pink", "red"];
+            for(let i=0;i<7;i++){
+                document.write("<p style='color:"+color[i]+";font-size:"+size[i]+"px;'>",days[i],"</p>");
+            }
+        }
+    
+        WeekDay();
+        </script>
+    </body>
+ </html>

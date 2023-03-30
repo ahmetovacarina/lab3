@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Лабораторная 3.3</title>
+        </head>
+            <body>
+                <script>
+                
+                    
+                    p = 1, f = 1;
+                    function e(x, n)
+                     {
+                         var r;
+                         if (n == 0)
+                             return 1;
+                             r = e(x, n - 1);
+                             p = p * x;
+                              f = f * n;
+                        return (r + p / f);
+                    }
+                    var x = parseFloat(prompt("Введите значение x")), n = parseFloat(prompt("Введите значение n",""));;
+                    var res = e(x, n);
+                    document.write(res.toFixed(6));
+                </script>  
+            </body>
+    </html>
